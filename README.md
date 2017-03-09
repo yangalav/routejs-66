@@ -1,6 +1,5 @@
-# Routejs66
-> Routejs 66
-> Pithy project description
+## Routejs 66
+> some cool description
 
 ## Team
 
