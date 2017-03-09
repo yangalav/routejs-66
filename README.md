@@ -2,7 +2,6 @@
 > Routejs 66
 > Pithy project description
 
-
 ## Team
 
   - __Product Owner__: Rich Serdici
