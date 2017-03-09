@@ -1,7 +1,5 @@
-## RICH IS EDITING THIS FILE...
-> Routejs 66
-> Pithy project description
-
+## Routejs 66
+> some cool description
 
 ## Team
 
