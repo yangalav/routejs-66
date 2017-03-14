@@ -1,0 +1,1 @@
+window.GOOGLE_JS_API_KEY = "GOOGLE_JS_API_KEY";

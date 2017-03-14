@@ -1,4 +1,6 @@
 angular.module("mapApp", [
+  "mapApp.map",
+  "mapApp.home",
   "ngRoute"
 ])
 .config(function($routeProvider) {
@@ -12,9 +14,18 @@ angular.module("mapApp", [
     controller: "mapCtrl"
   })
 })
+<<<<<<< HEAD
 .controller('homeCtrl', function($scope) {
 
 })
 .controller('mapCtrl', function($scope) {
   $scope.message = 'kill me'
 })
+=======
+// .controller('homeCtrl', function($scope) {
+//
+// })
+// .controller('mapCtrl', function($scope) {
+//   $scope.message = 'map here'
+// })
+>>>>>>> 2map
