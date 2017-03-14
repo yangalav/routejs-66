@@ -1,3 +1,7 @@
 node_modules/
 bower_components/
 .env
+
+
+## API keys ###
+public/keys/googlemaps.js
