@@ -1,6 +1,7 @@
 angular.module('mapApp.map', [])
-.controller('mapCtrl', function($scope, $window) {
-  var uluru = {lat: 40.748817, lng:  -73.985428};
+.controller('mapCtrl', function($rootScope, $scope, $window) {
+  console.log($rootScope.lat, $rootScope.lng)
+  var uluru = {lat: $rootScope.lat, lng: $rootScope.lng}
   $window.map = new google.maps.Map(document.getElementById('map'), {
     zoom: 12,
     center: uluru
