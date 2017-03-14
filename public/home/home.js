@@ -1,4 +1,7 @@
 angular.module('mapApp.home', [])
-.controller('homeCtrl', function($scope) {
-  $scope.message = "hi"
+.controller('homeCtrl', function($scope, $location) {
+  console.log($scope.location)
+  $scope.enterAddress = function(){
+    $location.path('/map');
+  }
 });
