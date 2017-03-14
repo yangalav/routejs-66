@@ -15,8 +15,16 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Angular Scripts -->
+<script src="map/map.js"></script>
 <script src="home/home.js"></script>
 <script src="app.js"></script>
+
+
+<script src="keys/googlemaps.js"></script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=GOOGLE_JS_API_KEY">
+</script>
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -25,8 +33,32 @@
 <![endif]-->
 </head>
 
+<body id="page-top">
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i> </button>
+      <a class="navbar-brand page-scroll" href="#page-top">Social Tours</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li> <a class="page-scroll" href="#">About</a> </li>
+        <li> <a class="page-scroll" href="#">Privacy</a> </li>
+        <li> <a class="page-scroll" href="#">Contact</a> </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<header>
+  <div class="header-content">
+    <div class="header-content-inner">
+      <h1 id="homeHeading">Social Generated Walking Tours</h1>
+      <hr>
+      <div ng-view></div>
+    </div>
+  </div>
+</header>
 
-<body ng-view></body>
 
 </body>
 </html>

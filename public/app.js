@@ -1,4 +1,6 @@
 angular.module("mapApp", [
+  "mapApp.map",
+  "mapApp.home",
   "ngRoute"
 ])
 .config(function($routeProvider) {
@@ -7,7 +9,14 @@ angular.module("mapApp", [
     templateUrl: "/home/home.html",
     controller: "homeCtrl"
   })
+  .when('/map', {
+    templateUrl: "/map/map.html",
+    controller: "mapCtrl"
+  })
 })
-.controller('homeCtrl', function($scope) {
-  
-});
+// .controller('homeCtrl', function($scope) {
+//
+// })
+// .controller('mapCtrl', function($scope) {
+//   $scope.message = 'map here'
+// })
