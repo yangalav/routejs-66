@@ -1,22 +1,15 @@
 <!DOCTYPE html>
-<html ng-app="mapApp" lang='en'>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Social-Generated Walking Tours</title>
-
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet">
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="home/home.js"></script>
-<script src="app.js"></script>
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -27,10 +20,10 @@
 
 <body id="page-top">
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
+  <div class="container-fluid"> 
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i> </button>
-      <a class="navbar-brand page-scroll" href="#page-top">Social Tours</a>
+      <a class="navbar-brand page-scroll" href="#page-top">Social Tours</a> 
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
@@ -41,8 +34,22 @@
     </div>
   </div>
 </nav>
-<div id="home">
-<div ng-view></div>
-</div>
+<header>
+  <div class="header-content">
+    <div class="header-content-inner">
+      <h1 id="homeHeading">Social Generated Walking Tours</h1>
+      <hr>
+      <p>Submit an address or choose current location to get a personalized walking tour.</p>
+      <form class="form-inline">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Enter an address...">
+        </div>
+        <button type="submit" class="btn btn-primary btn-xl page-scroll">Search</button>
+      </form>
+    </div>
+  </div>
+</header>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
