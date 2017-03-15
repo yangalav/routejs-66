@@ -11,4 +11,21 @@ angular.module('mapApp.map', [])
     map: map
   });
 
+  // $window.directionsDisplay = new google.maps.DirectionsRenderer();
+  // directionsDisplay.setMap($window.map);
+  // $window.directionsDisplay.setPanel(document.getElementById('panel'));
+  //
+  // $window.stepDisplay = new google.maps.InfoWindow;
+  //
+  // var request = {
+  //   origin: 'Chicago',
+  //   destination: 'New York',
+  //   travelMode: google.maps.DirectionsTravelMode.DRIVING
+  // };
+  //
+  // directionsService.route(request, function(response, status) {
+  //   if (status === google.maps.DirectionsStatus.OK) {
+  //     directionsDisplay.setDirections(response);
+  //   }
+  // });
 });
