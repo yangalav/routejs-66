@@ -11,7 +11,7 @@ angular.module('mapApp.map', [])
     map: map
   });
 
-  // var directionsService = new google.maps.DirectionsService();
+  var directionsService = new google.maps.DirectionsService;
   // var directionsDisplay = new google.maps.DirectionsRenderer();
   // var geocoder = new google.maps.Geocoder();
   //
