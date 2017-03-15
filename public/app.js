@@ -6,11 +6,11 @@ angular.module("mapApp", [
 .config(function($routeProvider) {
   $routeProvider
   .when('/', {
-    templateUrl: "/home/home.html",
+    templateUrl: "./home/home.html",
     controller: "homeCtrl"
   })
   .when('/map', {
-    templateUrl: "/map/map.html",
+    templateUrl: "./map/map.html",
     controller: "mapCtrl"
   })
 })
