@@ -11,12 +11,40 @@ angular.module('mapApp.map', [])
     map: map
   });
 
-  // $window.directionsDisplay = new google.maps.DirectionsRenderer();
-  // directionsDisplay.setMap($window.map);
-  // $window.directionsDisplay.setPanel(document.getElementById('panel'));
+  // var directionsService = new google.maps.DirectionsService();
+  // var directionsDisplay = new google.maps.DirectionsRenderer();
+  // var geocoder = new google.maps.Geocoder();
   //
-  // $window.stepDisplay = new google.maps.InfoWindow;
+  // $scope.directions = {
+  //   origin: "Collins St, Melbourne, Australia",
+  //   destination: "MCG Melbourne, Australia",
+  //   showList: false
+  // }
   //
+  // $scope.getDirections = function () {
+  //     var request = {
+  //       origin: $scope.directions.origin,
+  //       destination: $scope.directions.destination,
+  //       travelMode: google.maps.DirectionsTravelMode.DRIVING
+  //     };
+  //     directionsService.route(request, function (response, status) {
+  //       if (status === google.maps.DirectionsStatus.OK) {
+  //         directionsDisplay.setDirections(response);
+  //         directionsDisplay.setMap($window.map.control.getGMap());
+  //         // directionsDisplay.setPanel(document.getElementById('directionsList'));
+  //         // $scope.directions.showList = true;
+  //       } else {
+  //         alert('Google route unsuccesfull!');
+  //       }
+  //     });
+  //   }
+
+  // $window.onChangeHandler = function() {
+  //         calculateAndDisplayRoute($window.directionsService, $window.directionsDisplay);
+  //       };
+  //       document.getElementById('start').addEventListener('change', onChangeHandler);
+  //       document.getElementById('end').addEventListener('change', onChangeHandler);
+  // }
   // var request = {
   //   origin: 'Chicago',
   //   destination: 'New York',
