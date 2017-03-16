@@ -1,1 +1,13 @@
+<div id="floating-panel" ng-controller="mapCtrl">
+    <form class="form-horizontal" id="start">
+      <label>Start</label>
+      <input type="text" ng-model="request.origin">
+    </form>
+    <form class="form-horizontal" id="end">
+      <label>End</label>
+      <input type="text" ng-model="request.destination">
+    </form>
+    <button ng-click="getDirections()">Get Directions</button>
+</div>
+<div id="right-panel"></div>
 <div id="map" ng-controller="mapCtrl"></div>
