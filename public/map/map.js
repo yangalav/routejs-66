@@ -14,7 +14,6 @@ angular.module('mapApp.map', [])
     map: map
   });
 
-
   var directionsService = new google.maps.DirectionsService;
   var directionsDisplay = new google.maps.DirectionsRenderer({map: $window.map});
   var stepDisplay = new google.maps.InfoWindow;
@@ -38,5 +37,4 @@ angular.module('mapApp.map', [])
       }
       });
     }
-
 });
