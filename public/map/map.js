@@ -10,7 +10,7 @@ angular.module('mapApp.map', [])
     center: manhattan
   });
   $window.marker = new google.maps.Marker({
-    position: manhattan,
+    position: uluru,
     map: map
   });
 
